@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import ContactCard from '../components/ContactCard';
 import Modal from '../components/Modal';
 
+import { Context } from '../store/appContext';
+
 export default class Contacts extends React.Component {
   constructor(){
     super();
@@ -21,6 +23,7 @@ export default class Contacts extends React.Component {
           </p>
           <div id="contacts" className="panel-collapse collapse show" aria-expanded="true">
             <ul className="list-group pull-down" id="contact-list">
+              
               <ContactCard onDelete={() => this.setState({ showModal: true})} />
               <ContactCard />
               <ContactCard />
