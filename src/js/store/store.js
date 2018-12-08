@@ -8,13 +8,13 @@ const getState = (scope) => {
                    address:"47568 NW 34ST, 33434 FL, USA",
                    phone:"(786) 444 453",
                    email:"dave@gmail.com",
-                   profile: "https://media.istockphoto.com/photos/beautiful-profile-picture-id182773387?k=6&m=182773387&s=612x612&w=0&h=kXCC5JaOAdOUE5iyd9F2YocAk2O3OEmj6scZs2-QtEk="
+                   profile: "https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg"
                 },
                 {
                    full_name: "Erick Pired",
                    address:"1111 SW 23ST, 33233 FL, USA",
                    phone:"(786) 412 526",
-                   email: "Machete@gmail.com",
+                   email: "epir@gmail.com",
                    profile: "https://i.dailymail.co.uk/i/pix/2017/04/20/13/3F6B966D00000578-4428630-image-m-80_1492690622006.jpg"
                 },
                 {
@@ -29,7 +29,7 @@ const getState = (scope) => {
                    address:"47568 NW 34ST, 33434 FL, USA",
                    phone:"(786) 444 566",
                    email: "andres@gmail.com",
-                   profile: "https://image.shutterstock.com/image-photo/beautiful-african-american-woman-smiling-260nw-402466177.jpg"
+                   profile: "https://www.iti.org.uk/images/article-images/Profile-Interview-Photo---Fiona-Gray.jpg"
                 }
             ]
         },
