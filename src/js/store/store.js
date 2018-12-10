@@ -45,7 +45,13 @@ const getState = (scope) => {
                         phone: _phone,
                         email: _email
                         
-                    })
+                    });
+                scope.setState({ store });
+            },
+            deleteContact: (positionInArray) => {
+                let { store } = scope.state;
+                store.contacts.splice(positionInArray, 1);
+                scope.setState({ store });
             }
         }
     };
