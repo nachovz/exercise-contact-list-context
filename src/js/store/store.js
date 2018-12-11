@@ -36,7 +36,20 @@ const getState = (scope) => {
     actions: {
       //(Arrow) Functions that update the Store
       // Remember to use the scope: scope.state.store & scope.setState()
-      
+      addContact: (_name, _address, _phone, _email, _picture) => {
+        let { store } = scope.state;
+        store.contacts.push(
+            {
+                full_name: _name,
+                address: _address,
+                phone: _phone,
+                email: _email,
+                profile: _picture
+                
+            });
+        scope.setState({ store });
+        return true;
+      }
     }
   };
 };
