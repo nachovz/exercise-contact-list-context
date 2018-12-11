@@ -49,6 +49,12 @@ const getState = (scope) => {
             });
         scope.setState({ store });
         return true;
+      },
+      deleteContact: (positionInArray) => {
+        let { store } = scope.state;
+        store.contacts.splice(positionInArray, 1);
+        scope.setState({ store });
+        return true;
       }
     }
   };

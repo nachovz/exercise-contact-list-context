@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import { Context } from '../store/appContext';
 
@@ -25,7 +26,7 @@ export default class AddContact extends React.Component {
 	}
 	
 	render() {
-		return (
+		return(
 			<div className="container">
 				<div>
 					<h1 className="text-center mt-5">Add a new contact</h1>
@@ -83,20 +84,20 @@ export default class AddContact extends React.Component {
 						</div>
 						<Context.Consumer>
 							{ ({actions}) => (
-							<button 
-								type="button" 
-								className="btn btn-primary form-control"
-								onClick={() => {
-									if(this.validData()){
-										const { full_name, email, phone, address, profile } = this.state;
-										actions.addContact(full_name, address, email, phone, profile) 
-										&& 
-										this.props.history.goBack();
-									}else{
-										alert('invalid fields, please fill them all');
-									}
-								} }
-							>save</button>
+								<button 
+									type="button" 
+									className="btn btn-primary form-control"
+									onClick={() => {
+										if(this.validData()){
+											const { full_name, email, phone, address, profile } = this.state;
+											actions.addContact(full_name, address, email, phone, profile) 
+											&& 
+											this.props.history.goBack();
+										}else{
+											alert('invalid fields, please fill them all');
+										}
+									} }
+								>save</button>
 							)}
 						</Context.Consumer>
 						<Link className="mt-3 w-100 text-center" to="/">or get back to contacts</Link>
@@ -106,3 +107,7 @@ export default class AddContact extends React.Component {
 		);
 	}
 }
+
+AddContact.propTypes= {
+	history: PropTypes.object
+};
