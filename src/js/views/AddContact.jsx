@@ -53,7 +53,7 @@ export default class AddContact extends React.Component {
 							<button 
 								type="button" 
 								className="btn btn-primary form-control"
-								onClick={() => alert('Don\t know how to add :(')}
+								onClick={() => alert('Don\'t know how to add :(')}
 							>save</button>
 							
 						<Link className="mt-3 w-100 text-center" to="/">or get back to contacts</Link>
