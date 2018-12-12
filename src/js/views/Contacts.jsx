@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import ContactCard from '../components/ContactCard';
 import Modal from '../components/Modal';
 
+import { Context } from '../store/appContext';
+
 export default class Contacts extends React.Component {
 	constructor(){
 		super();
