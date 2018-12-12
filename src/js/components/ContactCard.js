@@ -48,7 +48,11 @@ class ContactCard extends React.Component{
 **/
 ContactCard.propTypes = {
 		history: PropTypes.object,
-		onDelete: PropTypes.func
+		onDelete: PropTypes.func,
+		full_name: PropTypes.string,
+		address: PropTypes.string,
+		phone: PropTypes.string,
+		email: PropTypes.string
 };
 
 /**
