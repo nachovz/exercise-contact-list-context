@@ -3,6 +3,7 @@ import {withRouter} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 class ContactCard extends React.Component{
+<<<<<<< HEAD
 	constructor(){
 		super();
 		this.state = {
@@ -10,6 +11,15 @@ class ContactCard extends React.Component{
 		};
 	}
 	
+=======
+	constructor(props){
+		super(props);
+		this.state = {
+				// initialize your state
+		};
+	}
+		
+>>>>>>> ea23ed49175c2dab332a3df0e9932e4e0406c19d
 	render(){
 		return (
 			<li className="list-group-item">
