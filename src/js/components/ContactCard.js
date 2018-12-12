@@ -32,7 +32,7 @@ class ContactCard extends React.Component{
 						<br />
 						<span className="fa fa-envelope fa-fw text-muted mr-3" data-toggle="tooltip" data-original-title="" title=""></span>
 						<span className="text-muted small text-truncate">
-						{this.props.email}
+							{this.props.email}
 						</span>
 					</div>
 				</div>
@@ -52,7 +52,8 @@ ContactCard.propTypes = {
 		full_name: PropTypes.string,
 		address: PropTypes.string,
 		phone: PropTypes.string,
-		email: PropTypes.string
+		email: PropTypes.string,
+		profile: PropTypes.string
 };
 
 /**
